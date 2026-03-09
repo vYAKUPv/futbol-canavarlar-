@@ -1,0 +1,50 @@
+<!DOCTYPE html><html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Futbol Ligi İstatistikleri</title>
+<style>
+body{font-family:Arial;background:#0f172a;color:white;margin:0}
+header{background:#020617;padding:20px;text-align:center;font-size:28px;font-weight:bold}
+nav{display:flex;gap:20px;justify-content:center;background:#1e293b;padding:10px}
+nav button{background:#334155;border:none;color:white;padding:10px 15px;border-radius:6px;cursor:pointer}
+section{display:none;padding:20px}
+section.active{display:block}
+table{width:100%;border-collapse:collapse;margin-top:10px}
+th,td{border:1px solid #475569;padding:8px;text-align:center}
+th{background:#1e293b}
+</style>
+</head>
+<body><header>⚽ Futbol Ligi İstatistikleri</header><nav>
+<button onclick="showPage('matches')">Maçlar</button>
+<button onclick="showPage('goals')">Gol & Asist</button>
+<button onclick="showPage('mvp')">MVP</button>
+<button onclick="showPage('table')">Puan Durumu</button>
+</nav><section id="matches" class="active">
+<h2>Maç Kayıtları</h2>
+<table>
+<tr><th>Tarih</th><th>Takım 1</th><th>Takım 2</th><th>Skor</th></tr>
+<tr><td>10.03.2026</td><td>Takım A</td><td>Takım B</td><td>2-1</td></tr>
+<tr><td>11.03.2026</td><td>Takım C</td><td>Takım D</td><td>0-0</td></tr>
+</table>
+</section><section id="goals">
+<h2>Gol & Asist</h2>
+<table>
+<tr><th>Oyuncu</th><th>Gol</th><th>Asist</th></tr>
+<tr><td>Ahmet</td><td>5</td><td>2</td></tr>
+<tr><td>Mehmet</td><td>3</td><td>4</td></tr>
+</table>
+</section><section id="mvp">
+<h2>MVP Oyuncuları</h2>
+<table>
+<tr><th>Maç</th><th>MVP</th></tr>
+<tr><td>Takım A vs Takım B</td><td>Ahmet</td></tr>
+<tr><td>Takım C vs Takım D</td><td>Ali</td></tr>
+</table>
+</section><section id="table">
+<h2>Puan Durumu</h2>
+<table>
+<tr><th>Takım</th><th>O</th><th>G</th><th>B</th><th>M</th><th>P</th></tr>
+<tr><td>Takım A</td><td>2</td><td>2</td><td>0</td><td>0</td><td>6</td></tr>
+<tr><td>Takım B</td><td>2</td><td>1</td><td>0</td><td>1</td><td>3</td></tr>
+<tr><td>Takım C</td><td>2</td><td>0</td><td>1</td><td>1</td><td>1</td
